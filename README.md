@@ -281,6 +281,7 @@ pushgateway.url=pushgateway:9091
 ---
 
 ## 📊 Monitoring — Grafana / Prometheus
+![Dashboard Grafana](./grafana-dashboard-ldap-batch.png)
 
 ### Importer le Dashboard
 
@@ -339,7 +340,7 @@ A Spring Batch application for **automatically locking inactive LDAP accounts** 
 
 Processing is **partitioned by alphabetical groups** (A-C, D-F, ..., 0-9) for high throughput, with **full observability** via Prometheus and Grafana.
 
-**🚀 Measured throughput: ~39 users/second**
+
 
 ---
 
@@ -442,6 +443,7 @@ docker-compose logs -f app
 ---
 
 ## 📊 Monitoring
+![Dashboard Grafana](./grafana-dashboard-ldap-batch.png)
 
 Import `grafana-dashboard-ldap-batch.json` into Grafana. Ensure the Prometheus datasource URL is `http://prometheus:9090` (not `localhost`).
 
