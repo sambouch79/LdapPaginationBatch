@@ -1,0 +1,106 @@
+spring:
+  # Configuration LDAP
+  ldap:
+    urls: ${SPRING_LDAP_URLS:ldap://openldap:389}
+    base: ${SPRING_LDAP_BASE:dc=test,dc=com}
+    username: ${SPRING_LDAP_USERNAME:cn=admin,dc=test,dc=com}
+    password: ${SPRING_LDAP_PASSWORD:admin123}
+    base-environment:
+      com.sun.jndi.ldap.read.timeout: 60000
+      com.sun.jndi.ldap.connect.timeout: 30000
+      java.naming.ldap.version: "3"
+
+  # Configuration PostgreSQL pour Spring Batch
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://postgres:5432/batchdb}
+    username: ${SPRING_DATASOURCE_USERNAME:batchuser}
+    password: ${SPRING_DATASOURCE_PASSWORD:batchpass}
+    driver-class-name: org.postgresql.Driver
+
+  # Configuration JPA
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 2
+      connection-timeout: 30000
+
+  # Configuration Batch
+  batch:
+    job:
+      enabled: true
+      names: lockInactiveUsersJob
+    jdbc:
+      initialize-schema: always
+    table-prefix: BATCH_
+    task-executor:
+      core-pool-size: 5
+      max-pool-size: 10
+
+# Configuration application
+server:
+  port: 8080
+  servlet:
+    context-path: /batch
+
+# Configuration spécifique
+batch:
+  ldap:
+    chunk-size: ${BATCH_CHUNK_SIZE:50}
+    letters: "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z,0,1,2,3,4,5,6,7,8,9"
+    inactive-months: 6
+    simulate-lock: ${BATCH_SIMULATE_LOCK:false}
+
+openldap:
+  inactivate:
+    mmonth: ${batch.ldap.inactive-months}
+
+# Pour tests
+test:
+  mode: ${BATCH_TEST_MODE:false}
+  max-users-per-letter: 100
+
+  # Pour tests
+  test:
+    mode: ${BATCH_TEST_MODE:false}
+    max-users-per-letter: 100
+
+
+# Management endpoints (pour monitoring)
+monitoring:
+  enabled: true
+  application-name: lockInactiveUsersJob
+
+# Prometheus Pushgateway
+management:
+  metrics:
+    export:
+      pushgateway:
+        enabled: true
+        base-url: http://pushgateway:9091
+        job: lockInactiveUsersJob
+        shutdown-operation: PUT
+  endpoints:
+    web:
+      exposure:
+        include: "health,info,metrics,batchJobs"
+  endpoint:
+    health:
+      show-details: always
+  info:
+    env:
+      enabled: true
+# Logging pour debug
+logging:
+  level:
+    org.springframework.ldap: DEBUG
+    com.batch.ldapPaginatiobatch: DEBUG
+
+
+

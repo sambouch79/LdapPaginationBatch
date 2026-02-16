@@ -1,0 +1,23 @@
+# OU pour les politiques
+dn: ou=policies,dc=test,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: policies
+
+# Politique par défaut
+dn: cn=default,ou=policies,dc=test,dc=com
+objectClass: top
+objectClass: device
+objectClass: pwdPolicy
+cn: default
+pwdAttribute: userPassword
+pwdMaxAge: 7776000
+pwdExpireWarning: 604800
+pwdInHistory: 5
+pwdCheckQuality: 1
+pwdMinLength: 8
+pwdMaxFailure: 5
+pwdLockout: TRUE
+pwdLockoutDuration: 1800
+pwdGraceAuthNLimit: 3
+pwdFailureCountInterval: 300

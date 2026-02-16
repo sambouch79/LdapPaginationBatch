@@ -1,0 +1,108 @@
+# Structure de base (peut être automatiquement créée par l'image, mais on la définit pour être sûr)
+dn: dc=test,dc=com
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+o: Test
+dc: test
+
+# Unité organisationnelle pour les utilisateurs
+dn: ou=users,dc=test,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: users
+
+# ===== UTILISATEURS DE TEST =====
+
+dn: cn=alice,ou=users,dc=test,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: alice
+sn: Dupont
+givenName: Alice
+mail: alice@test.com
+description: 20250101120000.0Z
+businessCategory: ACTIVE
+userPassword: password123
+
+dn: cn=bob,ou=users,dc=test,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: bob
+sn: Martin
+givenName: Bob
+mail: bob@test.com
+description: 20241201120000.0Z
+businessCategory: ACTIVE
+userPassword: password123
+
+
+dn: cn=charlie,ou=users,dc=test,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: charlie
+sn: Bernard
+givenName: Charlie
+mail: charlie@test.com
+description: 20230501120000.0Z
+businessCategory: ACTIVE
+userPassword: password123
+
+dn: cn=david,ou=users,dc=test,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: david
+sn: Durand
+givenName: David
+mail: david@test.com
+description: 20230101120000.0Z
+businessCategory: ACTIVE
+userPassword: password123
+
+
+dn: cn=001-robot,ou=users,dc=test,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: 001-robot
+sn: Robot
+givenName: Service
+mail: robot@test.com
+description: 20230301120000.0Z
+businessCategory: ACTIVE
+userPassword: password123
+
+dn: cn=admin-user,ou=users,dc=test,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: admin-user
+sn: Administrator
+givenName: Admin
+mail: admin@test.com
+description: 20230101120000.0Z
+businessCategory: ACTIVE
+userPassword: password123
+
+dn: cn=locked-user,ou=users,dc=test,dc=com
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+cn: locked-user
+sn: Locked
+givenName: Already
+mail: locked@test.com
+description: 20230101120000.0Z
+businessCategory: LOCKED
+userPassword: password123

@@ -1,0 +1,880 @@
+dn: ou=users,dc=test,dc=com
+objectClass: organizationalUnit
+ou: users
+
+# ====================================
+# UTILISATEURS RÉCENTS (ne devraient PAS être verrouillés)
+# ====================================
+
+# Groupe A-C (100 utilisateurs récents)
+dn: cn=alice.anderson,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: alice.anderson
+sn: Anderson
+userPassword: password123
+employeeNumber: 20250115120000Z
+
+dn: cn=arthur.brown,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: arthur.brown
+sn: Brown
+userPassword: password123
+employeeNumber: 20250110120000Z
+
+dn: cn=amy.clark,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: amy.clark
+sn: Clark
+userPassword: password123
+employeeNumber: 20241220120000Z
+
+dn: cn=adam.cooper,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: adam.cooper
+sn: Cooper
+userPassword: password123
+employeeNumber: 20241215120000Z
+
+dn: cn=bella.baker,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: bella.baker
+sn: Baker
+userPassword: password123
+employeeNumber: 20241210120000Z
+
+dn: cn=bob.bennett,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: bob.bennett
+sn: Bennett
+userPassword: password123
+employeeNumber: 20241205120000Z
+
+dn: cn=catherine.carter,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: catherine.carter
+sn: Carter
+userPassword: password123
+employeeNumber: 20241201120000Z
+
+dn: cn=charles.collins,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: charles.collins
+sn: Collins
+userPassword: password123
+employeeNumber: 20241125120000Z
+
+# Groupe D-F (100 utilisateurs récents)
+dn: cn=david.davis,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: david.davis
+sn: Davis
+userPassword: password123
+employeeNumber: 20241120120000Z
+
+dn: cn=daniel.edwards,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: daniel.edwards
+sn: Edwards
+userPassword: password123
+employeeNumber: 20241115120000Z
+
+dn: cn=emily.evans,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: emily.evans
+sn: Evans
+userPassword: password123
+employeeNumber: 20241110120000Z
+
+dn: cn=emma.foster,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: emma.foster
+sn: Foster
+userPassword: password123
+employeeNumber: 20241105120000Z
+
+dn: cn=frank.fisher,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: frank.fisher
+sn: Fisher
+userPassword: password123
+employeeNumber: 20241101120000Z
+
+# Groupe G-I (50 utilisateurs récents)
+dn: cn=george.garcia,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: george.garcia
+sn: Garcia
+userPassword: password123
+employeeNumber: 20241025120000Z
+
+dn: cn=grace.gray,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: grace.gray
+sn: Gray
+userPassword: password123
+employeeNumber: 20241020120000Z
+
+dn: cn=hannah.harris,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: hannah.harris
+sn: Harris
+userPassword: password123
+employeeNumber: 20241015120000Z
+
+dn: cn=henry.hall,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: henry.hall
+sn: Hall
+userPassword: password123
+employeeNumber: 20241010120000Z
+
+dn: cn=isabella.jackson,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: isabella.jackson
+sn: Jackson
+userPassword: password123
+employeeNumber: 20241005120000Z
+
+# ====================================
+# UTILISATEURS INACTIFS (devraient être verrouillés)
+# ====================================
+
+# Groupe J-L (300 utilisateurs inactifs)
+dn: cn=jack.johnson,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: jack.johnson
+sn: Johnson
+userPassword: password123
+employeeNumber: 20230601120000Z
+
+dn: cn=james.jones,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: james.jones
+sn: Jones
+userPassword: password123
+employeeNumber: 20230515120000Z
+
+dn: cn=jennifer.king,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: jennifer.king
+sn: King
+userPassword: password123
+employeeNumber: 20230501120000Z
+
+dn: cn=jessica.kelly,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: jessica.kelly
+sn: Kelly
+userPassword: password123
+employeeNumber: 20230415120000Z
+
+dn: cn=john.lewis,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: john.lewis
+sn: Lewis
+userPassword: password123
+employeeNumber: 20230401120000Z
+
+dn: cn=joseph.lee,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: joseph.lee
+sn: Lee
+userPassword: password123
+employeeNumber: 20230315120000Z
+
+dn: cn=karen.lopez,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: karen.lopez
+sn: Lopez
+userPassword: password123
+employeeNumber: 20230301120000Z
+
+dn: cn=laura.long,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: laura.long
+sn: Long
+userPassword: password123
+employeeNumber: 20230215120000Z
+
+# Groupe M-O (300 utilisateurs inactifs)
+dn: cn=mark.martin,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: mark.martin
+sn: Martin
+userPassword: password123
+employeeNumber: 20230201120000Z
+
+dn: cn=mary.moore,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: mary.moore
+sn: Moore
+userPassword: password123
+employeeNumber: 20230115120000Z
+
+dn: cn=matthew.miller,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: matthew.miller
+sn: Miller
+userPassword: password123
+employeeNumber: 20230101120000Z
+
+dn: cn=michael.martinez,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: michael.martinez
+sn: Martinez
+userPassword: password123
+employeeNumber: 20221215120000Z
+
+dn: cn=nancy.nelson,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: nancy.nelson
+sn: Nelson
+userPassword: password123
+employeeNumber: 20221201120000Z
+
+dn: cn=nicholas.nguyen,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: nicholas.nguyen
+sn: Nguyen
+userPassword: password123
+employeeNumber: 20221115120000Z
+
+dn: cn=olivia.owens,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: olivia.owens
+sn: Owens
+userPassword: password123
+employeeNumber: 20221101120000Z
+
+# Groupe P-R (300 utilisateurs inactifs)
+dn: cn=paul.parker,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: paul.parker
+sn: Parker
+userPassword: password123
+employeeNumber: 20221015120000Z
+
+dn: cn=peter.phillips,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: peter.phillips
+sn: Phillips
+userPassword: password123
+employeeNumber: 20221001120000Z
+
+dn: cn=rachel.roberts,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: rachel.roberts
+sn: Roberts
+userPassword: password123
+employeeNumber: 20220915120000Z
+
+dn: cn=rebecca.rodriguez,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: rebecca.rodriguez
+sn: Rodriguez
+userPassword: password123
+employeeNumber: 20220901120000Z
+
+dn: cn=richard.robinson,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: richard.robinson
+sn: Robinson
+userPassword: password123
+employeeNumber: 20220815120000Z
+
+dn: cn=robert.ross,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: robert.ross
+sn: Ross
+userPassword: password123
+employeeNumber: 20220801120000Z
+
+# Groupe S-U (100 utilisateurs inactifs)
+dn: cn=samuel.smith,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: samuel.smith
+sn: Smith
+userPassword: password123
+employeeNumber: 20220715120000Z
+
+dn: cn=sarah.scott,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: sarah.scott
+sn: Scott
+userPassword: password123
+employeeNumber: 20220701120000Z
+
+dn: cn=sophia.stewart,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: sophia.stewart
+sn: Stewart
+userPassword: password123
+employeeNumber: 20220615120000Z
+
+dn: cn=steven.sullivan,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: steven.sullivan
+sn: Sullivan
+userPassword: password123
+employeeNumber: 20220601120000Z
+
+dn: cn=susan.sanders,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: susan.sanders
+sn: Sanders
+userPassword: password123
+employeeNumber: 20220515120000Z
+
+dn: cn=thomas.taylor,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: thomas.taylor
+sn: Taylor
+userPassword: password123
+employeeNumber: 20220501120000Z
+
+dn: cn=timothy.turner,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: timothy.turner
+sn: Turner
+userPassword: password123
+employeeNumber: 20220415120000Z
+
+# Groupe V-Z (50 utilisateurs inactifs)
+dn: cn=victoria.walker,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: victoria.walker
+sn: Walker
+userPassword: password123
+employeeNumber: 20220401120000Z
+
+dn: cn=vincent.white,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: vincent.white
+sn: White
+userPassword: password123
+employeeNumber: 20220315120000Z
+
+dn: cn=william.williams,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: william.williams
+sn: Williams
+userPassword: password123
+employeeNumber: 20220301120000Z
+
+dn: cn=zachary.young,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: zachary.young
+sn: Young
+userPassword: password123
+employeeNumber: 20220215120000Z
+
+# Groupe 0-9 (50 utilisateurs inactifs - comptes système/test)
+dn: cn=001admin,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: 001admin
+sn: Admin
+userPassword: password123
+employeeNumber: 20220201120000Z
+
+dn: cn=002backup,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: 002backup
+sn: Backup
+userPassword: password123
+employeeNumber: 20220115120000Z
+
+dn: cn=003service,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: 003service
+sn: Service
+userPassword: password123
+employeeNumber: 20220101120000Z
+
+dn: cn=999test,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: 999test
+sn: Test
+userPassword: password123
+employeeNumber: 20211215120000Z
+
+# Utilisateur déjà verrouillé
+dn: cn=locked.user,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: locked.user
+sn: Locked
+userPassword: password123
+employeeNumber: 20211201120000Z
+employeeType: LOCKED
+
+# --- GROUPE A-C (Partition 1) ---
+dn: cn=albert.camus,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: albert.camus
+sn: Camus
+employeeNumber: 20230101100000Z
+employeeType: ACTIVE
+
+dn: cn=benoit.costil,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: benoit.costil
+sn: Costil
+employeeNumber: 20220515100000Z
+employeeType: ACTIVE
+
+# --- GROUPE D-F (Partition 2) ---
+dn: cn=denis.diderot,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: denis.diderot
+sn: Diderot
+employeeNumber: 20210810100000Z
+employeeType: ACTIVE
+
+dn: cn=emile.zola,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: emile.zola
+sn: Zola
+employeeNumber: 20240210100000Z
+employeeType: ACTIVE
+
+# --- GROUPE G-I (Partition 3) ---
+dn: cn=guy.maupassant,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: guy.maupassant
+sn: Maupassant
+employeeNumber: 20230320100000Z
+employeeType: ACTIVE
+
+# --- USERS INACTIFS (Cibles du Batch) ---
+dn: cn=jean.valjean,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: jean.valjean
+sn: Valjean
+employeeNumber: 20220101100000Z
+employeeType: ACTIVE
+
+dn: cn=karim.benzema,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: karim.benzema
+sn: Benzema
+employeeNumber: 20211111111111Z
+employeeType: ACTIVE
+
+dn: cn=leonardo.da-vinci,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: leonardo.da-vinci
+sn: Da Vinci
+employeeNumber: 20200505100000Z
+employeeType: ACTIVE
+
+dn: cn=marcel.proust,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: marcel.proust
+sn: Proust
+employeeNumber: 20221231235959Z
+employeeType: ACTIVE
+
+dn: cn=napoleon.bonaparte,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: napoleon.bonaparte
+sn: Bonaparte
+employeeNumber: 20191201120000Z
+employeeType: ACTIVE
+
+# --- USERS DÉJÀ VERROUILLÉS ---
+dn: cn=old.locked,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: old.locked
+sn: Old
+employeeNumber: 20180101120000Z
+employeeType: LOCKED
+
+# --- PLUS DE VOLUME POUR TESTER LE POOLING ---
+dn: cn=paul.verlaine,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: paul.verlaine
+sn: Verlaine
+employeeNumber: 20231010100000Z
+employeeType: ACTIVE
+
+dn: cn=quentin.durward,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: quentin.durward
+sn: Durward
+employeeNumber: 20230505100000Z
+employeeType: ACTIVE
+
+dn: cn=robert.doisneau,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: robert.doisneau
+sn: Doisneau
+employeeNumber: 20220808080808Z
+employeeType: ACTIVE
+
+dn: cn=simone.veil,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: simone.veil
+sn: Veil
+employeeNumber: 20240101100000Z
+employeeType: ACTIVE
+
+dn: cn=thomas.pesquet,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: thomas.pesquet
+sn: Pesquet
+employeeNumber: 20231225120000Z
+employeeType: ACTIVE
+
+dn: cn=ursule.mirouet,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: ursule.mirouet
+sn: Mirouet
+employeeNumber: 20210606060606Z
+employeeType: ACTIVE
+
+dn: cn=victor.hugo,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: victor.hugo
+sn: Hugo
+employeeNumber: 20200202101010Z
+employeeType: ACTIVE
+
+dn: cn=walter.scott,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: walter.scott
+sn: Scott
+employeeNumber: 20220909090909Z
+employeeType: ACTIVE
+
+dn: cn=xavier.niel,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: xavier.niel
+sn: Niel
+employeeNumber: 20230404040404Z
+employeeType: ACTIVE
+
+# --- Tranche G-I ---
+dn: cn=georges.brassens,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: georges.brassens
+sn: Brassens
+employeeNumber: 20210520100000Z
+employeeType: ACTIVE
+
+dn: cn=helene.oucher,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: helene.oucher
+sn: Oucher
+employeeNumber: 20231115100000Z
+employeeType: ACTIVE
+
+# --- Tranche J-L ---
+dn: cn=jean.racine,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: jean.racine
+sn: Racine
+employeeNumber: 20201010100000Z
+employeeType: ACTIVE
+
+dn: cn=jules.verne,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: jules.verne
+sn: Verne
+employeeNumber: 20220814120000Z
+employeeType: ACTIVE
+
+dn: cn=louis.pasteur,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: louis.pasteur
+sn: Pasteur
+employeeNumber: 20211212120000Z
+employeeType: ACTIVE
+
+# --- Tranche M-O ---
+dn: cn=moliere.poquelin,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: moliere.poquelin
+sn: Moliere
+employeeNumber: 20230601090000Z
+employeeType: ACTIVE
+
+dn: cn=oscar.wilde,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: oscar.wilde
+sn: Wilde
+employeeNumber: 20190101100000Z
+employeeType: ACTIVE
+
+# --- Tranche P-R ---
+dn: cn=pierre.curie,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: pierre.curie
+sn: Curie
+employeeNumber: 20220303030303Z
+employeeType: ACTIVE
+
+dn: cn=rené.descartes,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: rené.descartes
+sn: Descartes
+employeeNumber: 20230909090909Z
+employeeType: ACTIVE
+
+# --- Tranche S-U ---
+dn: cn=stendhal.beyle,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: stendhal.beyle
+sn: Stendhal
+employeeNumber: 20201111111111Z
+employeeType: ACTIVE
+
+dn: cn=thomas.aquinas,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: thomas.aquinas
+sn: Aquinas
+employeeNumber: 20210707070707Z
+employeeType: ACTIVE
+
+# --- Tranche V-Z ---
+dn: cn=voltaire.arouet,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: voltaire.arouet
+sn: Voltaire
+employeeNumber: 20220404040404Z
+employeeType: ACTIVE
+
+dn: cn=yves.montand,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: yves.montand
+sn: Montand
+employeeNumber: 20230505050505Z
+employeeType: ACTIVE
+
+dn: cn=zola.emile2,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: zola.emile2
+sn: ZolaBis
+employeeNumber: 20181212120000Z
+employeeType: ACTIVE
+
+# --- Comptes Spéciaux / Cas limites ---
+dn: cn=admin.test,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: admin.test
+sn: TestAdmin
+employeeNumber: 20200101010101Z
+employeeType: ACTIVE
+
+dn: cn=guest.user,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: guest.user
+sn: Guest
+employeeNumber: 20210202020202Z
+employeeType: ACTIVE
+
+dn: cn=system.account,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: system.account
+sn: System
+employeeNumber: 20151010101010Z
+employeeType: ACTIVE
+
+# --- Tranche S-U (Pour réveiller cette partition) ---
+dn: cn=sarah.bernhardt,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: sarah.bernhardt
+sn: Bernhardt
+employeeNumber: 20210315100000Z
+employeeType: ACTIVE
+
+dn: cn=stefan.zweig,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: stefan.zweig
+sn: Zweig
+employeeNumber: 20221120100000Z
+employeeType: ACTIVE
+
+dn: cn=ulysse.grant,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: ulysse.grant
+sn: Grant
+employeeNumber: 20200512100000Z
+employeeType: ACTIVE
+
+# --- Tranche V-Z ---
+dn: cn=virginia.woolf,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: virginia.woolf
+sn: Woolf
+employeeNumber: 20230110100000Z
+employeeType: ACTIVE
+
+dn: cn=william.shakespeare,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: william.shakespeare
+sn: Shakespeare
+employeeNumber: 20190505100000Z
+employeeType: ACTIVE
+
+dn: cn=xavier.graall,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: xavier.graall
+sn: Graall
+employeeNumber: 20210808100000Z
+employeeType: ACTIVE
+
+dn: cn=yuri.gagarin,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: yuri.gagarin
+sn: Gagarin
+employeeNumber: 20220412100000Z
+employeeType: ACTIVE
+
+# --- Tranche 0-9 (La partition souvent vide) ---
+dn: cn=007.bond,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: 007.bond
+sn: 007
+employeeNumber: 20200707070707Z
+employeeType: ACTIVE
+
+dn: cn=123.test,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: 123.test
+sn: 123
+employeeNumber: 20231201100000Z
+employeeType: ACTIVE
+
+# --- Utilisateurs Inactifs Divers (A-R) ---
+dn: cn=arthur.rimbaud,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: arthur.rimbaud
+sn: Rimbaud
+employeeNumber: 20210909100000Z
+employeeType: ACTIVE
+
+dn: cn=blaise.pascal,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: blaise.pascal
+sn: Pascal
+employeeNumber: 20200202100000Z
+employeeType: ACTIVE
+
+dn: cn=charles.baudelaire,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: charles.baudelaire
+sn: Baudelaire
+employeeNumber: 20220606100000Z
+employeeType: ACTIVE
+
+dn: cn=didier.erard,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: didier.erard
+sn: Erard
+employeeNumber: 20210101100000Z
+employeeType: ACTIVE
+
+dn: cn=edgar.poe,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: edgar.poe
+sn: Poe
+employeeNumber: 20201212120000Z
+employeeType: ACTIVE
+
+dn: cn=franck.kafka,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: franck.kafka
+sn: Kafka
+employeeNumber: 20220303030303Z
+employeeType: ACTIVE
+
+dn: cn=gustave.flaubert,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: gustave.flaubert
+sn: Flaubert
+employeeNumber: 20211111111111Z
+employeeType: ACTIVE
+
+dn: cn=honoré.balzac,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: honoré.balzac
+sn: Balzac
+employeeNumber: 20200520100000Z
+employeeType: ACTIVE
+
+dn: cn=isaac.newton,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: isaac.newton
+sn: Newton
+employeeNumber: 20220101100000Z
+employeeType: ACTIVE
+
+dn: cn=jean.cocteau,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: jean.cocteau
+sn: Cocteau
+employeeNumber: 20230202100000Z
+employeeType: ACTIVE
+
+dn: cn=karl.marx,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: karl.marx
+sn: Marx
+employeeNumber: 20180505100000Z
+employeeType: ACTIVE
+
+dn: cn=lao.tseu,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: lao.tseu
+sn: Tseu
+employeeNumber: 20170101100000Z
+employeeType: ACTIVE
+
+dn: cn=marie.curie,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: marie.curie
+sn: Curie
+employeeNumber: 20220707100000Z
+employeeType: ACTIVE
+
+dn: cn=niccolo.machiavelli,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: niccolo.machiavelli
+sn: Machiavelli
+employeeNumber: 20210404040404Z
+employeeType: ACTIVE
+
+dn: cn=omar.khayyam,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: omar.khayyam
+sn: Khayyam
+employeeNumber: 20191010100000Z
+employeeType: ACTIVE
+
+dn: cn=pablo.picasso,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: pablo.picasso
+sn: Picasso
+employeeNumber: 20221010100000Z
+employeeType: ACTIVE
+
+dn: cn=rosa.luxemburg,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: rosa.luxemburg
+sn: Luxemburg
+employeeNumber: 20200115100000Z
+employeeType: ACTIVE
+
+# --- Comptes à exclure (Tests de sécurité) ---
+dn: cn=root.admin,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: root.admin
+sn: Root
+employeeNumber: 20100101100000Z
+employeeType: ACTIVE
+
+dn: cn=backup.service,ou=users,dc=test,dc=com
+objectClass: inetOrgPerson
+cn: backup.service
+sn: Backup
+employeeNumber: 20150101100000Z
+employeeType: ACTIVE

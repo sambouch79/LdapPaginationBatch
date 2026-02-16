@@ -1,0 +1,9 @@
+dn: cn=module{0},cn=config
+changetype: modify
+add: olcModuleLoad
+olcModuleLoad: lastbind.la
+
+dn: olcOverlay=lastbind,olcDatabase={1}mdb,cn=config
+changetype: add
+objectClass: olcOverlayConfig
+olcOverlay: lastbind
