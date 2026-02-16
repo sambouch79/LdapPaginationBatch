@@ -281,7 +281,7 @@ pushgateway.url=pushgateway:9091
 ---
 
 ## 📊 Monitoring — Grafana / Prometheus
-![Dashboard Grafana](grafana-dashboard-ldap-batch.png)
+![Dashboard Grafana](./grafana-dashboard-ldap-batch.PNG)
 
 ### Importer le Dashboard
 
@@ -443,7 +443,7 @@ docker-compose logs -f app
 ---
 
 ## 📊 Monitoring
-![Dashboard Grafana](grafana-dashboard-ldap-batch.png)
+![Dashboard Grafana](./grafana-dashboard-ldap-batch.PNG)
 
 Import `grafana-dashboard-ldap-batch.json` into Grafana. Ensure the Prometheus datasource URL is `http://prometheus:9090` (not `localhost`).
 
