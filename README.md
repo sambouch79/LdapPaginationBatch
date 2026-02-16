@@ -16,7 +16,7 @@ Batch Spring permettant le **verrouillage automatique des comptes LDAP inactifs*
 
 Le traitement est **partitionné par groupes alphabétiques** (A-C, D-F, ..., 0-9) pour garantir de hautes performances, et intègre un **monitoring complet** via Prometheus et Grafana.
 
-**🚀 Performances mesurées : ~39 utilisateurs/seconde**
+
 
 ---
 
@@ -281,7 +281,7 @@ pushgateway.url=pushgateway:9091
 ---
 
 ## 📊 Monitoring — Grafana / Prometheus
-![Dashboard Grafana](./grafana-dashboard-ldap-batch.png)
+![Dashboard Grafana](grafana-dashboard-ldap-batch.png)
 
 ### Importer le Dashboard
 
@@ -443,7 +443,7 @@ docker-compose logs -f app
 ---
 
 ## 📊 Monitoring
-![Dashboard Grafana](./grafana-dashboard-ldap-batch.png)
+![Dashboard Grafana](grafana-dashboard-ldap-batch.png)
 
 Import `grafana-dashboard-ldap-batch.json` into Grafana. Ensure the Prometheus datasource URL is `http://prometheus:9090` (not `localhost`).
 
